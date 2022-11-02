@@ -1,0 +1,15 @@
+﻿@model DrawACard
+
+@for(int i = 0; i < Model.cards.Count(); i++)
+{
+    <p><b>Card @i is</b> @Model.cards[i].code, the @Model.cards[i].value of @Model.cards[i].suit</p>
+    <br>
+    <img src="@Model.cards[i].image">
+    <br>
+    <br>
+    <br>
+}
+
+<br>
+<br>
+<a asp-action="Index2" asp-controller= "Home" asp-route-deckId="@Model.deck_id"><p>Click Here to Continue!</p></a>

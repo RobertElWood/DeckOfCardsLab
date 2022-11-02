@@ -1,0 +1,10 @@
+﻿@model NewDeck
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To The Card Saver App!</h1>
+    <h3>This app will allow you to shuffle and draw from a persistent deck of @Model.remaining cards.</h3>
+    <br>
+    <p>Hit the button below to shuffle your deck of cards and get started!!!</p>
+    <br>
+    <a asp-action="ShuffleDeckView" asp-controller= "Home" asp-route-deckId="@Model.deck_id"><p>1) Shuffle Deck</p></a>
+</div>

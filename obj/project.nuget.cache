@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Pjh4QIXhMAJl1DSbxkD0ptl5l+WAuTR1U7yPB/FFRC8DnV00VAAwjwlCijnVqYx5UAC5cPp9vN9dt8d+Lx30rw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rober\\Documents\\C# Class\\DeckofCardsAPILab\\DeckofCardsAPILab.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rober\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

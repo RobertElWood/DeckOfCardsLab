@@ -1,0 +1,18 @@
+﻿@model ShuffledDeck
+
+<div class="text-center">
+    <h1 class="display-4">Welcome To The Card Saver App!</h1>
+    <h3>This app will allow you to shuffle and draw from a persistent deck of 52 cards.</h3>
+    <br>
+    <h4>You have @Model.remaining cards left in the deck.</h4>
+    <br>
+    <p>Select one of the options below to continue!</p>
+    <br>
+    <a asp-action="ReShuffleView" asp-controller= "Home" asp-route-deckID="@Model.deck_id"><p>1) Shuffle Deck Again!</p></a>
+    <br>
+    <form asp-action="DrawCardsView" asp-controller ="Home" asp-route-deckID="@Model.deck_id" asp-route-count="count">
+        <label for="count"> 2)Enter number of cards to draw:</label>
+        <input type="number" id="count" name="count"/>
+        <input type="submit" name="Draw Cards" />
+    </form>
+</div>
